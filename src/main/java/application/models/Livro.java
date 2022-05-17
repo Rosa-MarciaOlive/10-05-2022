@@ -36,4 +36,17 @@ private Autor autor;
     }public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+    public Genero getGenero() {
+        return genero;
+    }
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+    public Autor getAutor() {
+        return autor;
+    }
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
 }
