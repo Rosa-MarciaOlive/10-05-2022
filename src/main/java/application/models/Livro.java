@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +16,14 @@ public class Livro{
 
     private int id;
     private String titulo;
+
+@ManyToOne
+@JoinColumn(name="id_genero")
+private Genero genero;
+
+@ManyToOne
+@JoinColumn(name="id_autor")
+private Autor autor;
 
     public int getId() {
         return id;
